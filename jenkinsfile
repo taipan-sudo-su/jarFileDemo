@@ -45,17 +45,5 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            // Clean up or perform additional actions after the build and deploy stages
-        }
 
-        success {
-            echo 'Build and deploy successful!'
-        }
-
-        failure {
-            echo 'Build or deploy failed. Take necessary actions.'
-        }
-    }
 }
